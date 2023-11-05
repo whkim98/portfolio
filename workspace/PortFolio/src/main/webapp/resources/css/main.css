@@ -1,0 +1,170 @@
+@charset "UTF-8";
+
+/*@font-face {
+	    font-family: 'KOTRAHOPE';
+	    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/KOTRAHOPE.woff2') format('woff2');
+	    font-weight: normal;
+	    font-style: normal;
+	}
+	*/
+	
+/*	@font-face {
+    font-family: 'TheJamsil5Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+*/
+
+@font-face {
+    font-family: 'OAGothic-ExtraBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/OAGothic-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+}
+  	
+  	body {
+      
+      font-family: 'OAGothic-ExtraBold';
+
+    }
+    
+    .wh{
+	  flex: 1;
+      padding: 30px;
+	}
+    
+    .prjfont {
+	  border-bottom-width: 2px;
+	  border-bottom-style: solid;
+	  font-family: Black Han Sans,sans-serif;
+	  font-weight: 400;
+	  font-size: 3rem;
+	  line-height: 1.5;
+	  font-family: 'OAGothic-ExtraBold';
+	}
+    
+    .backwhite {
+      clear:both;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  height: 65vh;
+	  width: 80%;
+	  background-color: white;
+	  margin: auto;
+	  border-radius: 20px;
+	  font-family: 'OAGothic-ExtraBold';
+	  font-size: 0.8rem;
+	}
+
+	.backwhite-container {
+	  position: relative;
+	  width: 80%;
+	  
+	  max-width: 100%;
+	  font-family: 'OAGothic-ExtraBold';
+	}
+
+
+  
+	.book {
+	  position: relative;
+	  display: flex;
+	  align-items: center;
+	  max-width: 50%;
+	  margin: auto;
+	  font-family: 'OAGothic-ExtraBold';
+	  flex-direction: row; /* 가로 방향으로 배치하도록 추가 */
+	}
+
+
+    .animate-slide {
+      animation: slide 0.5s;
+    }
+
+    @keyframes slide {
+      0% {
+        transform: translateX(0);
+      }
+      50% {
+        transform: translateX(10%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+    .book-info {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+
+    .book-info p {
+      margin: 0;
+      padding: 0;
+      font-size: 14px;
+      white-space: nowrap;
+      margin-bottom: 10px;
+    }
+
+    .readme-button {
+      background-color: gray;
+      color: white;
+      padding: 10px 15px;
+      text-decoration: none;
+      border-radius: 10px;
+      max-width: 100%;
+    }
+
+    .info-divider {
+      width: 100%;
+      height: 2px;
+      background-color: gray;
+      margin: 10px 0;
+    }
+
+    .info-content {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    .checkmark {
+      margin-right: 10px;
+    }
+
+    .user-content-link {
+      margin-left: 10px;
+    }
+    .book-image {
+      width: 100%;
+      height: auto;
+      transition: transform 0.3s ease;
+    }
+    .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 50px;
+      height: 50px;
+      background-color: gray;
+      color: white;
+      font-size: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    .left-arrow {
+      left: 0;
+    }
+
+    .right-arrow {
+      right: 0;
+    }

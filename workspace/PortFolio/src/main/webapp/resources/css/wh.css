@@ -1,0 +1,559 @@
+@charset "UTF-8";
+
+
+
+
+ .skills-container {
+	 z-index: 0;
+ position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 50vh;
+      background-color: #cdcdcd; /* 전체 화면 배경색을 바꾸지 않고 기본 회색으로 설정 */
+    }
+    
+  .skills-container2 {
+	  z-index: 0;
+  position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 50vh;
+      background-color: #cdcdcd; /* 전체 화면 배경색을 바꾸지 않고 기본 회색으로 설정 */
+    }
+
+
+
+
+	
+  
+   .icon {
+    width: 36px;
+    height: 36px;
+   }
+    
+    
+    .image-container {
+      margin: 40px;
+    }
+
+    /* 스타일 시트에 각이 둥근 사각형 스타일을 정의합니다. */
+    .rounded-rectangle1 {
+      width: 200px; /* 원하는 사각형의 너비 */
+      height: 450px; /* 원하는 사각형의 높이 */
+      background-color: #ffffff; /* 사각형의 배경 색상 */
+      border-radius: 20px; /* 각을 둥글게 만들어주는 속성 (값은 조정 가능) */
+      padding: 20px; /* 사각형 내부 여백 (원하는 대로 조정 가능) */
+      box-shadow: 4px 4px 6px #888888; /* 그림자 효과 (원하는 대로 조정 가능) */
+      position: relative; /* 가상 가로선을 위해 position을 설정합니다. */
+       /* 상하 좌우 위치를 지정하는 코드 */
+  	  top: 35px; /* 상단으로 50px 이동 */
+  	 /*left: 30px;  왼쪽으로 30px 이동 */
+    }
+
+    /* 가상 가로선 스타일을 정의합니다. */
+    .rounded-rectangle1::after {
+      content: "";
+      position: absolute;
+      bottom: 85%; /* 사각형 하단의 중앙에 위치하도록 설정합니다. */
+      left: 18px; /* 가로선의 왼쪽 위치를 조정합니다. */
+      width: 85%; /* 가로선의 길이 (사각형 너비에 대한 상대적인 값으로 조정) */
+      height: 0.5px; /* 가로선의 높이 */
+      background-color: #BCBCBC; /* 가로선의 색상 */
+    }
+
+    /* <p>Frontend</p> 요소의 스타일을 수정합니다. */
+    .rounded-rectangle1 p {
+      font-size: 24px; /* 텍스트의 크기를 조정합니다. */
+      margin: 0; /* 기본 마진을 제거합니다. */
+      padding: 10px; /* 텍스트 내부 여백을 설정합니다. */
+      color: blue;
+      font-weight: bold;
+     /* text-align: center;  가운데 정렬합니다. */
+    }
+
+    /* 이미지 스타일을 정의합니다. */
+    .rounded-rectangle1 img {
+      display: block; /* 인라인 요소를 블록 요소로 변환하여 세로 정렬을 용이하게 합니다. */
+      margin: 35px auto; /* 가운데 정렬 */
+      max-width: 100%; /* 이미지의 최대 너비를 설정하여 사각형에 맞게 조정합니다. */
+      max-height: 350px; /* 이미지의 최대 높이를 설정하여 사각형에 맞게 조정합니다. */
+     /* border-radius: 50%; 이미지를 둥글게 처리합니다. (원형 이미지로 보이도록) */
+    }
+    
+    .rounded-rectangle2 {
+      width: 200px; /* 원하는 사각형의 너비 */
+      height: 400px; /* 원하는 사각형의 높이 */
+      background-color: #ffffff; /* 사각형의 배경 색상 */
+      border-radius: 20px; /* 각을 둥글게 만들어주는 속성 (값은 조정 가능) */
+      padding: 20px; /* 사각형 내부 여백 (원하는 대로 조정 가능) */
+      box-shadow: 4px 4px 6px #888888; /* 그림자 효과 (원하는 대로 조정 가능) */
+      position: relative; /* 가상 가로선을 위해 position을 설정합니다. */
+       top: 35px; 
+    }
+    
+        /* 가상 가로선 스타일을 정의합니다. */
+    .rounded-rectangle2::after {
+      content: "";
+      position: absolute;
+      bottom: 84%; /* 사각형 하단의 중앙에 위치하도록 설정합니다. */
+      left: 18px; /* 가로선의 왼쪽 위치를 조정합니다. */
+      width: 85%; /* 가로선의 길이 (사각형 너비에 대한 상대적인 값으로 조정) */
+      height: 1px; /* 가로선의 높이 */
+      background-color: #BCBCBC; /* 가로선의 색상 */
+    }
+
+    /* <p>Frontend</p> 요소의 스타일을 수정합니다. */
+    .rounded-rectangle2 p {
+      font-size: 24px; /* 텍스트의 크기를 조정합니다. */
+      margin: 0; /* 기본 마진을 제거합니다. */
+      padding: 10px; /* 텍스트 내부 여백을 설정합니다. */
+      color: blue;
+      font-weight: bold;
+     /* text-align: center;  가운데 정렬합니다. */
+    }
+
+    /* 이미지 스타일을 정의합니다. */
+    .rounded-rectangle2 img {
+      display: block; /* 인라인 요소를 블록 요소로 변환하여 세로 정렬을 용이하게 합니다. */
+      margin: 35px auto; /* 가운데 정렬 */
+      max-width: 100%; /* 이미지의 최대 너비를 설정하여 사각형에 맞게 조정합니다. */
+      max-height: 350px; /* 이미지의 최대 높이를 설정하여 사각형에 맞게 조정합니다. */
+     /* border-radius: 50%; 이미지를 둥글게 처리합니다. (원형 이미지로 보이도록) */
+    }
+    
+    
+    
+    .rounded-rectangle3 {
+      width: 200px; /* 원하는 사각형의 너비 */
+      height: 240px; /* 원하는 사각형의 높이 */
+      background-color: #ffffff; /* 사각형의 배경 색상 */
+      border-radius: 20px; /* 각을 둥글게 만들어주는 속성 (값은 조정 가능) */
+      padding: 20px; /* 사각형 내부 여백 (원하는 대로 조정 가능) */
+      box-shadow: 4px 4px 6px #888888; /* 그림자 효과 (원하는 대로 조정 가능) */
+      position: relative; /* 가상 가로선을 위해 position을 설정합니다. */
+      top: 35px;  /* 상단으로 50px 이동 */
+    }
+    
+        /* 가상 가로선 스타일을 정의합니다. */
+    .rounded-rectangle3::after {
+      content: "";
+      position: absolute;
+      bottom: 75%; /* 사각형 하단의 중앙에 위치하도록 설정합니다. */
+      left: 18px; /* 가로선의 왼쪽 위치를 조정합니다. */
+      width: 85%; /* 가로선의 길이 (사각형 너비에 대한 상대적인 값으로 조정) */
+      height: 0.5px; /* 가로선의 높이 */
+      background-color: #BCBCBC; /* 가로선의 색상 */
+    }
+
+    /* <p>Frontend</p> 요소의 스타일을 수정합니다. */
+    .rounded-rectangle3 p {
+      font-size: 24px; /* 텍스트의 크기를 조정합니다. */
+      margin: 0; /* 기본 마진을 제거합니다. */
+      padding: 10px; /* 텍스트 내부 여백을 설정합니다. */
+      color: blue;
+      font-weight: bold;
+     /* text-align: center;  가운데 정렬합니다. */
+     
+    }
+
+    /* 이미지 스타일을 정의합니다. */
+    .rounded-rectangle3 img {
+      display: block; /* 인라인 요소를 블록 요소로 변환하여 세로 정렬을 용이하게 합니다. */
+      margin: 35px auto; /* 가운데 정렬 */
+      max-width: 78%; /* 이미지의 최대 너비를 설정하여 사각형에 맞게 조정합니다. */
+      max-height: 350px; /* 이미지의 최대 높이를 설정하여 사각형에 맞게 조정합니다. */
+     /* border-radius: 50%; 이미지를 둥글게 처리합니다. (원형 이미지로 보이도록) */
+    }
+    
+
+    
+    .image-container:hover {
+	  z-index: 0;
+  	  transform: translateY(4px);
+	}
+	
+	
+	.resized-image {
+  	width: 50px; /* Set the desired width for the image */
+  	height: 50px; /* Set the desired height for the image */
+	}
+	
+	
+	.title_skills_container {
+    width: 200px; /* 원하는 너비로 조정 */
+  	/*background-color: #cccc00;  배경색은 원하는 대로 변경 */
+  	/* 하위 div를 원하는 위치로 배치하기 위해 필요한 스타일링을 추가하세요. */
+  	/* 예를 들어, 아래와 같이 사용할 수 있습니다. */
+  	top: 50%; /* 상위 div의 중앙에 배치 */
+  	left: 50%; /* 상위 div의 중앙에 배치 */
+  	transform: translate(-50%, -50%); /* 중앙 정렬을 위해 사용 */
+    
+	}
+	
+	
+	
+
+.skills {
+    /* 내용을 가로 방향으로 가운데 정렬하는 스타일 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+
+
+  .skills_line {
+    width: 10%;
+    height: 2px;
+    background-color: #cdcdcd;
+    margin-top: 10px; /* 가로줄의 위쪽 여백을 설정 */
+    margin-bottom: 10px; /* 가로줄의 아래쪽 여백을 설정 */
+  }
+	
+	
+	
+	
+	.title_skills {
+	position: relative;
+    top: -100px; /* 위쪽 여백을 20픽셀로 설정 */
+    /*left: 500px;  왼쪽 여백을 10픽셀로 설정 */
+	}
+	
+	/* 
+	
+	/* .horizontal_line 요소의 스타일을 정의합니다. */
+	.skills_line {
+    position: absolute;
+    bottom: 450%; /* 가로줄의 위치를 조정합니다. */
+    width: 10%;
+    height: 2px;
+    background-color: #ffffff; /* 가로줄의 색상을 설정합니다. */
+	}
+	
+	
+	
+	
+	
+
+    @media screen and (max-width: 600px) {
+      /* 해상도가 600px 이하일 때 요소를 오른쪽으로 이동 */
+      .box {
+        transform: translateX(50px);
+      }
+    }
+    
+    .skills_kind {
+  	  display: flex;
+  	  position: absolute; /* 절대 위치로 설정합니다. */
+  	  top: 5%; /* 상단 기준으로 50% 위치에 배치합니다. */
+  	  left: 50%; /* 왼쪽 기준으로 50% 위치에 배치합니다. */
+  	  transform: translate(-50%, -50%); /* 요소의 가로와 세로를 각각 50%만큼 이동시켜 중앙으로 정렬합니다. */
+  	  
+	}
+	
+	
+	.wh{
+		background-color: #1d809f;
+	}
+	
+	
+	
+	
+	
+
+ /* About Me 섹션 스타일 */
+ 
+ 
+ .aboutme-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+        margin-top: 20px; /* 위 여백을 설정하여 줄 간격을 조정 */
+        /* 추가적인 스타일 설정 가능 */
+
+      background-color: #f5f5f5; /* 전체 화면 배경색을 바꾸지 않고 기본 회색으로 설정 */
+    }
+    
+  .aboutme-container2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     
+      background-color: #f5f5f5; /* 전체 화면 배경색을 바꾸지 않고 기본 회색으로 설정 */
+    }
+ 
+ 
+     .aboutme {
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+         grid-template-rows: repeat(2, 1fr);
+         gap: 20px;
+         max-width: 700px;
+         background-color: #f5f5f5; /* 배경색을 회색으로 설정 */
+          height: 350px;
+         padding: 10px;
+            
+     }
+
+        .aboutme p {
+            text-align: center;
+            
+        }
+
+        .aboutme .icon {
+            width: 36px;
+            height: 36px;
+            margin-bottom: 10px;
+            
+        }
+        
+        
+        
+        
+  .parent-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* 선택 사항: 레이아웃에 맞게 높이 조정 */
+  background-color: lightgray; /* 배경색을 회색으로 설정 */
+}
+
+  .aboutme > div {
+    text-align: center; /* 각 요소의 내용을 가운데 정렬합니다. */
+    margin: 10px; /* 각 요소들 사이의 여백을 조정합니다. */
+  
+  }
+        
+
+   .aboutme .AboutMe1,
+   .aboutme .AboutMe2,
+   .aboutme .AboutMe3,
+   .aboutme .AboutMe4,
+   .aboutme .AboutMe5,
+   .aboutme .AboutMe6 {
+        	text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center; /* 가운데 정렬을 위해 추가 */
+            flex-direction: column; /* 세로로 정렬을 위해 추가 */
+        }
+
+        .aboutme svg {
+            margin-right: 10px;
+        }
+
+
+
+
+
+
+
+    /* 컨테이너를 가운데 정렬하기 위한 래퍼 추가 */
+    .container-wrapper {
+      display: flex;
+      justify-content: center;
+    }
+
+
+    .archiving-container1 {
+      width: 450px; /* 원하는 사각형의 너비 */
+      height: 300px; /* 원하는 사각형의 높이 */
+      background-color: #ffffff; /* 사각형의 배경 색상 */
+      border-radius: 20px; /* 각을 둥글게 만들어주는 속성 (값은 조정 가능) */
+      padding: 20px; /* 사각형 내부 여백 (원하는 대로 조정 가능) */
+      box-shadow: 4px 4px 6px #888888; /* 그림자 효과 (원하는 대로 조정 가능) */
+      position: relative; /* 가상 가로선을 위해 position을 설정합니다. */
+       /* 상하 좌우 위치를 지정하는 코드 */
+  	  top: 35px; /* 상단으로 50px 이동 */
+  	 right: 50px; /* 왼쪽으로 30px 이동 */
+    }
+
+
+
+    /* <p>Frontend</p> 요소의 스타일을 수정합니다. */
+    .archiving-container1 p {
+      font-size: 24px; /* 텍스트의 크기를 조정합니다. */
+      margin: 0; /* 기본 마진을 제거합니다. */
+      padding: 10px; /* 텍스트 내부 여백을 설정합니다. */
+      color: blue;
+      font-weight: bold;
+     /* text-align: center;  가운데 정렬합니다. */
+    }
+
+    /* 이미지 스타일을 정의합니다. */
+    .archiving-container1 img {
+      display: block; /* 인라인 요소를 블록 요소로 변환하여 세로 정렬을 용이하게 합니다. */
+      margin: 35px auto; /* 가운데 정렬 */
+      max-width: 45%; /* 이미지의 최대 너비를 설정하여 사각형에 맞게 조정합니다. */
+      max-height: 350px; /* 이미지의 최대 높이를 설정하여 사각형에 맞게 조정합니다. */
+     /* border-radius: 50%; 이미지를 둥글게 처리합니다. (원형 이미지로 보이도록) */
+    }
+    
+    .archiving-container2 {
+      width: 450px; /* 원하는 사각형의 너비 */
+      height: 300px; /* 원하는 사각형의 높이 */
+      background-color: #ffffff; /* 사각형의 배경 색상 */
+      border-radius: 20px; /* 각을 둥글게 만들어주는 속성 (값은 조정 가능) */
+      padding: 20px; /* 사각형 내부 여백 (원하는 대로 조정 가능) */
+      box-shadow: 4px 4px 6px #888888; /* 그림자 효과 (원하는 대로 조정 가능) */
+      position: relative; /* 가상 가로선을 위해 position을 설정합니다. */
+       top: 35px; 
+       left: 50px; 
+    }
+    
+
+    /* <p>Frontend</p> 요소의 스타일을 수정합니다. */
+    .archiving-container2 p {
+      font-size: 24px; /* 텍스트의 크기를 조정합니다. */
+      margin: 0; /* 기본 마진을 제거합니다. */
+      padding: 10px; /* 텍스트 내부 여백을 설정합니다. */
+      color: blue;
+      font-weight: bold;
+     /* text-align: center;  가운데 정렬합니다. */
+    }
+
+    /* 이미지 스타일을 정의합니다. */
+    .archiving-container2 img {
+      display: block; /* 인라인 요소를 블록 요소로 변환하여 세로 정렬을 용이하게 합니다. */
+      margin: 35px auto; /* 가운데 정렬 */
+      max-width: 45%; /* 이미지의 최대 너비를 설정하여 사각형에 맞게 조정합니다. */
+      max-height: 350px; /* 이미지의 최대 높이를 설정하여 사각형에 맞게 조정합니다. */
+     /* border-radius: 50%; 이미지를 둥글게 처리합니다. (원형 이미지로 보이도록) */
+    }
+    
+    .readme-button {
+    
+    }
+    
+
+
+
+
+    /* 스타일 추가 */
+    .archiving {
+      text-align: center; /* 텍스트를 가운데 정렬 */
+    }
+
+    /* 추가 스타일 (선택사항) */
+    .title_archiving img {
+      size: 30%;
+      max-width: 100%; /* 이미지가 컨테이너 너비를 초과하지 않도록 설정 */
+      display: inline-block; /* 이미지를 인라인 블록 요소로 설정하여 텍스트와 옆으로 배치 */
+      vertical-align: middle; /* 텍스트와 수직으로 가운데 정렬되도록 설정 */
+      margin-right: 1px; /* 이미지의 오른쪽에 10px 간격을 주어 span과 이미지 사이의 간격을 설정 */
+    }
+    
+    .title_archiving span {
+      display: inline-block; /* 제목을 인라인 블록 요소로 설정하여 이미지와 옆으로 배치 */
+      font-weight: bold;
+      font-size: 2.5em;
+      line-height: 1.5em;
+      color: black;
+      font-family: Arial;
+    }
+    
+    
+       /* 스타일 추가 */
+   .AboutMe_name, .AboutMe_birth, .AboutMe_address, .AboutMe_pnumber, .AboutMe_email, .AboutMe_career {
+      font-size: 24px; /* 이름 요소의 글꼴 크기를 18px로 설정 */
+      font-weight: bold; /* 이름 요소의 글꼴 굵기를 bold로 설정 */
+    }
+
+   .AboutMe_myname, .AboutMe_mybirth, .AboutMe_myaddress, .AboutMe_mypnumber, .AboutMe_myemail, .AboutMe_mycareer {
+      font-size: 18px; /* 내 이름 요소의 글꼴 크기를 24px로 설정 */
+      font-weight: normal; /* 내 이름 요소의 글꼴 굵기를 normal로 설정 */
+    }
+
+
+
+
+
+    /* 컨테이너를 가운데 정렬하기 위한 래퍼 추가 */
+    .project-container {
+      display: flex;
+      justify-content: center;
+        align-items: center;
+  height: 30vh; /* 선택 사항: 레이아웃에 맞게 높이 조정 */
+  background-color: #1d809f; /* 배경색을 회색으로 설정 */
+      
+    }
+    
+      .project-container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   /*height: 100vh; 선택 사항: 레이아웃에 맞게 높이 조정 */
+  background-color: pink; /* 배경색을 회색으로 설정 */
+}
+
+
+.project-container1 {
+  width: 1200px; /* 원하는 사각형의 너비 */
+  height: 1300px; /* 원하는 사각형의 높이 */
+  background-color: #ffffff; /* 사각형의 배경 색상 */
+  border-radius: 20px; /* 각을 둥글게 만들어주는 속성 (값은 조정 가능) */
+  padding: 20px; /* 사각형 내부 여백 (원하는 대로 조정 가능) */
+  box-shadow: 4px 4px 6px #888888; /* 그림자 효과 (원하는 대로 조정 가능) */
+  position: relative; /* position을 relative로 유지합니다. */
+  margin: 0 auto; /* 좌우 여백을 'auto'로 설정하여 가운데 정렬을 수행합니다. */
+  display: flex; /* 요소들을 수평으로 정렬하기 위해 flex 속성 추가 */
+  flex-direction: column; /* 요소들을 세로로 배치하기 위해 flex-direction 속성 추가 */
+  align-items: center; 
+  justify-content: center; 
+  
+}
+
+.project1 {
+
+}
+
+    /* <p>Frontend</p> 요소의 스타일을 수정합니다. */
+    .project-container1 p {
+      text-align: center;
+      font-size: 35px; /* 텍스트의 크기를 조정합니다. */
+      margin: 0; /* 기본 마진을 제거합니다. */
+      padding: 10px; /* 텍스트 내부 여백을 설정합니다. */
+      color: block;
+      font-weight: bold;
+      
+    }
+
+    /* 이미지 스타일을 정의합니다. */
+.project-container1 img {
+  display: block; /* 인라인 요소를 블록 요소로 변환하여 세로 정렬을 용이하게 합니다. */
+  width: 500px; /* 이미지의 너비를 200px로 설정합니다. */
+  height: 700px; /* 높이를 자동으로 조절하여 원래 이미지의 비율을 유지합니다. */
+  max-height: 650px; /* 이미지의 최대 높이를 설정하여 사각형에 맞게 조정합니다. */
+  position: absolute; /* 이미지의 위치를 조절하기 위해 position을 absolute로 설정합니다. */
+  top: 50%; /* 컨테이너 상단으로부터 50% 떨어진 위치로 설정합니다. */
+  left: 45%; /* 컨테이너 왼쪽으로부터 50% 떨어진 위치로 설정합니다. */
+  transform: translate(-90%, -70%); /* 이미지의 중심이 컨테이너의 중심으로 오도록 이동시킵니다. */
+}
+
+
+
+.projects_explanation {
+  /* 기존 스타일 */
+ 
+  position: absolute;
+  top: 15%; /* 상단으로부터 50% 이동 */
+  left: 50%; /* 좌측으로부터 50% 이동 */
+  /*left: 95%; 이미지의 왼쪽에 위치하도록 left 값을 0으로 설정합니다. */
+  height : 25%;
+  width: 40%; /* 가로 전체를 차지하도록 width를 100%로 설정합니다. */
+  background-color: rgba(255, 255, 255, 0.8); /* 배경 색상을 투명한 흰색으로 설정합니다. */
+  padding: 20px; /* 내용과의 여백을 설정합니다. */
+  display: flex;
+  flex-direction: column;
+  /*justify-content: center;  내용을 수평으로 가운데로 정렬합니다. */
+  margin-left: 20px;
+
+}
+
+.readme-button {
+  /* 기존 스타일 */
+  width: 160px; /* 버튼의 가로 사이즈를 150px로 조정 */
+  position: relative; /* 가상 요소를 포함하는 컨테이너를 상대적 위치로 설정 */
+}
